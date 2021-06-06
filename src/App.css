@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-image: linear-gradient(to top, #09203f 0%, #537895 95%);
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -46,6 +46,7 @@ form button:hover {
 .todo-list {
   min-width: 30%;
   list-style: none;
+
 }
 
 .todo {
@@ -63,6 +64,7 @@ form button:hover {
 }
 .todo li {
   flex: 1;
+  list-style: none;
 }
 
 .trash-btn,

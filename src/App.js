@@ -13,8 +13,15 @@ function App() {
 
   // Effects
 
+  useEffect( () => {
+    // this will only run once when the app loads for the first time
+    getLocal();
+  }, []
+  );
+
   useEffect(() => {
     filterHandler();
+    savetoLocal();
   }, [todos, status]);
 
   //Fuinctions
@@ -33,9 +40,18 @@ function App() {
   };
 
   // Save to Local Storage
+  const savetoLocal = () => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  };
 
-  const saveLocalTodos = () =>{
-    
+  const getLocal = () =>{
+    if(localStorage.getItem('todos') ===null){
+      localStorage.setItem('todos', JSON.stringify([]));
+    }else{
+      let localTodos= JSON.parse(localStorage.getItem("todos"));
+      setTodos(localTodos);
+
+    }
   };
   return (
     <div className="App">

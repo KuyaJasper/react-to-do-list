@@ -1,4 +1,4 @@
-# To do list:
+# To do list
 
 ## Description:
 
@@ -55,9 +55,8 @@ Example of how deployed application should run:
 ![Screen-Recording](./src/images/screenrecord.gif)
 
 
-# Deployed Application:
+## Deployed Application: [Click Here](https://kuyajasper.github.io/react-to-do-list/)
 
-[Click Here](https://kuyajasper.github.io/react-to-do-list/)
 
 ## Questions:
 
